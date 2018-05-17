@@ -16,3 +16,6 @@ end
 
 -- Export/Return Function(s) --
 return Module;
+
+-- https://wiki.roblox.com/index.php?title=API:Class/HttpService/GetAsync
+-- https://wiki.roblox.com/index.php?title=API:Class/HttpService/PostAsync
