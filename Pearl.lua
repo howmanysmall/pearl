@@ -7,7 +7,7 @@ local Module = {};
 -- GET Request Function --
 Module:GET = function (URL, NoCache, Headers)
   -- Paramater Type Checking --
-  if typeof(URL) !== "String" then 
+  if typeof(URL) ~= "String" then 
     return '@PARAM "URL" Is Not A String'
   elseif typeof(NoCache) !== "Boolean" then
     return '@PARAM "NoCache" Is Not A Boolean'
