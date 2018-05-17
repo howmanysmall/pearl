@@ -5,7 +5,7 @@ local HttpService = game:GetService("HttpService");
 local Module = {};
 
 -- GET Request Function --
-Module:GET = function (URL, NoCache, Headers)
+function Module:GET (URL, NoCache, Headers)
   -- Paramater Type Checking --
   if typeof(URL) ~= "String" then 
     return '@PARAM "URL" Is Not A String'
@@ -19,7 +19,7 @@ Module:GET = function (URL, NoCache, Headers)
 end
   
 -- POST Request Function --
-Module:POST = function (URL, Data, ContentType, Compress, Headers)
+function Module:POST (URL, Data, ContentType, Compress, Headers)
 
 end
 
