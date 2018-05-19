@@ -1,11 +1,11 @@
--- Declare Service(s) --
-local HttpService = game:GetService("HttpService");
+-- Declare Service(s)
+local HttpService = game:GetService("HttpService")
 
--- Declare Variable(s) --
-local Module = {};
+-- Declare Variable(s)
+local Module = {}
 
 -- GET Request Function --
-function Module:GET (URL, NoCache, Headers)
+function Module:GET(URL, NoCache, Headers)
   -- Paramater Type Checking --
   if typeof(URL) ~= "String" then 
     return '@PARAM "URL" Is Not A String'
@@ -18,13 +18,13 @@ function Module:GET (URL, NoCache, Headers)
 
 end
   
--- POST Request Function --
-function Module:POST (URL, Data, ContentType, Compress, Headers)
+-- POST Request Function
+function Module:POST(URL, Data, ContentType, Compress, Headers)
 
 end
 
--- Export/Return Function(s) --
-return Module;
+-- Export/Return Function(s)
+return Module
 
 -- https://wiki.roblox.com/index.php?title=API:Class/HttpService/GetAsync
 -- https://wiki.roblox.com/index.php?title=API:Class/HttpService/PostAsync
